@@ -4,7 +4,7 @@ A modern, dark-themed AI-powered digital marketing platform with glassmorphism U
 
 ## 🚀 Live Demo
 
-👉 [View Live on Vercel](https://your-vercel-url.vercel.app) *(Replace this link with your actual deployed link)*
+👉 [View Live on Vercel](https://admybrand-saas.vercel.app/)
 
 ---
 
