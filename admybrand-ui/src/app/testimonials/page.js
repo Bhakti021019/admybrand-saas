@@ -5,7 +5,8 @@ export default function TestimonialsPage() {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/testimonials')
+    // Use relative path or environment variable for production compatibility
+    fetch('/api/testimonials')
       .then(res => res.json())
       .then(data => setTestimonials(data));
   }, []);
@@ -16,7 +17,7 @@ export default function TestimonialsPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {testimonials.map(t => (
           <div key={t._id} className="bg-white/70 p-6 rounded shadow">
-            <p className="italic mb-2">"{t.message}"</p>
+            <p className="italic mb-2">{`"${t.message}"`}</p>
             <div className="flex items-center gap-4">
               <img src={t.photo} alt={t.name} className="w-12 h-12 rounded-full" />
               <div>
